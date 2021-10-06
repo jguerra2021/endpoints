@@ -1,48 +1,54 @@
 package com.sv.modelos;
 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="pedido", catalog="pedidos", schema="")
+@Table(name="facdoc", catalog="factura", schema="")
 public class User {
 
 	@Id
 	@Column
-	private Integer idpedido;
+	private Integer id;
 	@Column
-	private Integer cantidad;
+	private Date fecha;
 	@Column
-	private String articulo;
+	private String nit;
 	@Column
-	private String direccion;
+	private String nombre_cliente;
+	@Column
+	private String producto;
 	
-	public Integer getIdpedido() {
-		return idpedido;
-	}
-	public void setIdpedido(Integer idpedido) {
-		this.idpedido = idpedido;
-	}
-	public Integer getCantidad() {
-		return cantidad;
-	}
-	public void setCantidad(Integer cantidad) {
-		this.cantidad = cantidad;
-	}
-	public String getArticulo() {
-		return articulo;
-	}
-	public void setArticulo(String articulo) {
-		this.articulo = articulo;
-	}
-	public String getDireccion() {
-		return direccion;
-	}
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public Integer getId() {
+		return id;
 	}
 	
+	public Date getFecha() {
+		return fecha;
+	}
+	
+	public String getNit() {
+		return nit;
+	}
+	public void setNit(String nit) {
+		this.nit = nit;
+	}
+	public String getNombre_cliente() {
+		return nombre_cliente;
+	}
+	public void setNombre_cliente(String nombre_cliente) {
+		this.nombre_cliente = nombre_cliente;
+	}
+	public String getProducto() {
+		return producto;
+	}
+	public void setProducto(String producto) {
+		this.producto = producto;
+	}
+
 
 }

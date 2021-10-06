@@ -13,7 +13,7 @@ import com.sv.modelos.User;
 import com.sv.repositorio.InterfaceUsuario;
 
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/fac")
 public class UserControlador {
 	
 	@Autowired
