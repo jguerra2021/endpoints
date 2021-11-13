@@ -2,21 +2,41 @@ package com.sv.modelos;
 
 import java.sql.Date;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="facdoc", catalog="factura", schema="")
+@Table(name="uni", catalog="webfinal", schema="")
 public class User {
 
 	@Id
 	@Column
-	private Integer id;
+	private String seed;
 	@Column
-	private Date fecha;
-	@Column
+	private String texto;
+	public String getSeed() {
+		return seed;
+	}
+	public void setSeed(String seed) {
+		this.seed = seed;
+	}
+	public String getTexto() {
+		
+		return texto;
+	}
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+	
+	
+	
+	
+	
+	
+	/*@Column
 	private String nit;
 	@Column
 	private String nombre_cliente;
@@ -48,7 +68,7 @@ public class User {
 	}
 	public void setProducto(String producto) {
 		this.producto = producto;
-	}
+	}*/
 
 
 }

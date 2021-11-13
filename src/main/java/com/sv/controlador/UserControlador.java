@@ -22,6 +22,7 @@ public class UserControlador {
 	@GetMapping
 	public List<User> usuarios()
 	{
+		
 		return (List<User>) InterfaceUser.findAll();
 	}
 	
